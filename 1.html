@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>igt@gem_exec_fair@basic-deadline - Details</title>
+    <link rel="stylesheet" href="../result.css">
+  </head>
+  <body>
+    <h1>Results for igt@gem_exec_fair@basic-deadline</h1>
+    <h2>Overview</h2>
+    <div>
+      <p><b>Result:</b> fail</p>
+    </div>
+    <p><a href="../index.html">Back to summary</a></p>
+    <h2>Details</h2>
+    <table>
+      <tr>
+        <th>Detail</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Returncode</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Time</td>
+        <td>0:00:02.210000</td>
+      </tr>
+      <tr>
+        <td>Stdout</td>
+        <td>
+          <pre>IGT-Version: 1.26-g34ff2cf2b (x86_64) (Linux: 5.14.0-rc3-CI-CI_DRM_10392+ x86_64)
+Running on alderlake_s
+Using Execlists submission
+Has kernel scheduler
+ - With priority sorting
+ - With preemption enabled
+ - With HW semaphores enabled
+ - With engine busy statistics
+ - With timeslicing enabled
+CS timestamp frequency: 19200000
+Starting subtest: basic-deadline
+Testing 1 children, with 31470000ns
+Stack trace:
+  #0 ../lib/igt_core.c:1745 __igt_fail_assert()
+  #1 ../tests/i915/gem_exec_fair.c:1171 deadline.constprop.5()
+  #2 ../tests/i915/gem_exec_fair.c:1342 __real_main1211()
+  #3 ../tests/i915/gem_exec_fair.c:1211 main()
+  #4 ../csu/libc-start.c:342 __libc_start_main()
+  #5 [_start+0x2a]
+Subtest basic-deadline: FAIL (2.210s)
+</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Stderr</td>
+        <td>
+          <pre>Starting subtest: basic-deadline
+(gem_exec_fair:887) WARNING: Frame 2: over by 799193ns
+(gem_exec_fair:887) WARNING: Frame 3: over by 253493ns
+(gem_exec_fair:887) CRITICAL: Test assertion failure function deadline, file ../tests/i915/gem_exec_fair.c:1173:
+(gem_exec_fair:887) CRITICAL: Failed assertion: missed == 0
+(gem_exec_fair:887) CRITICAL: 1 child, missed 2 frames, overran by 1052us
+Subtest basic-deadline failed.
+**** DEBUG ****
+(gem_exec_fair:887) DEBUG: Test requirement passed: has_syncobj(i915)
+(gem_exec_fair:887) DEBUG: Test requirement passed: has_fence_array(i915)
+(gem_exec_fair:887) DEBUG: Test requirement passed: has_mi_math(i915, &amp;pe)
+(gem_exec_fair:887) DEBUG: Test requirement passed: has_ctx_timestamp(i915, cfg, &amp;pe)
+(gem_exec_fair:887) DEBUG: Test requirement passed: has_mi_math(i915, &amp;ve)
+(gem_exec_fair:887) DEBUG: Test requirement passed: has_ctx_timestamp(i915, cfg, &amp;ve)
+(gem_exec_fair:887) DEBUG: Test requirement passed: base
+(gem_exec_fair:887) INFO: Testing 1 children, with 31470000ns
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) WARNING: Frame 2: over by 799193ns
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) WARNING: Frame 3: over by 253493ns
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) DEBUG: CPU usage: 0%
+(gem_exec_fair:887) CRITICAL: Test assertion failure function deadline, file ../tests/i915/gem_exec_fair.c:1173:
+(gem_exec_fair:887) CRITICAL: Failed assertion: missed == 0
+(gem_exec_fair:887) CRITICAL: 1 child, missed 2 frames, overran by 1052us
+(gem_exec_fair:887) igt_core-INFO: Stack trace:
+(gem_exec_fair:887) igt_core-INFO:   #0 ../lib/igt_core.c:1745 __igt_fail_assert()
+(gem_exec_fair:887) igt_core-INFO:   #1 ../tests/i915/gem_exec_fair.c:1171 deadline.constprop.5()
+(gem_exec_fair:887) igt_core-INFO:   #2 ../tests/i915/gem_exec_fair.c:1342 __real_main1211()
+(gem_exec_fair:887) igt_core-INFO:   #3 ../tests/i915/gem_exec_fair.c:1211 main()
+(gem_exec_fair:887) igt_core-INFO:   #4 ../csu/libc-start.c:342 __libc_start_main()
+(gem_exec_fair:887) igt_core-INFO:   #5 [_start+0x2a]
+****  END  ****
+Subtest basic-deadline: FAIL (2.210s)
+</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Command</td>
+        <td>
+          <pre></pre>
+        </td>
+      </tr>
+      <tr>
+        <td>dmesg</td>
+        <td>
+          <pre>&lt;6&gt; [119.408027] Console: switching to colour dummy device 80x25
+&lt;6&gt; [119.408116] [IGT] gem_exec_fair: executing
+&lt;7&gt; [119.427130] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 1 created
+&lt;6&gt; [119.433021] [IGT] gem_exec_fair: starting subtest basic-deadline
+&lt;7&gt; [119.433174] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 1 created
+&lt;7&gt; [119.435916] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 1 created
+&lt;7&gt; [119.437493] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 1 created
+&lt;7&gt; [119.442303] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 2 created
+&lt;6&gt; [121.649307] [IGT] gem_exec_fair: exiting, ret=98
+&lt;6&gt; [121.717115] Console: switching to colour frame buffer device 240x67
+</pre>
+        </td>
+      </tr>
+    </table>
+    <p><a href="../index.html">Back to summary</a></p>
+  </body>
+</html>
