@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>igt@gem_exec_fair@basic-flow@rcs0 - Details</title>
+    <link rel="stylesheet" href="../result.css">
+  </head>
+  <body>
+    <h1>Results for igt@gem_exec_fair@basic-flow@rcs0</h1>
+    <h2>Overview</h2>
+    <div>
+      <p><b>Result:</b> pass</p>
+    </div>
+    <p><a href="../index.html">Back to summary</a></p>
+    <h2>Details</h2>
+    <table>
+      <tr>
+        <th>Detail</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Returncode</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Time</td>
+        <td>0:00:07.065000</td>
+      </tr>
+      <tr>
+        <td>Stdout</td>
+        <td>
+          <pre>IGT-Version: 1.26-g34ff2cf2b (x86_64) (Linux: 5.14.0-rc3-CI-CI_DRM_10392+ x86_64)
+Running on alderlake_s
+Using Execlists submission
+Has kernel scheduler
+ - With priority sorting
+ - With preemption enabled
+ - With HW semaphores enabled
+ - With engine busy statistics
+ - With timeslicing enabled
+CS timestamp frequency: 19200000
+Starting subtest: basic-flow
+Starting dynamic subtest: rcs0
+Interval 17.01ms, range 0.33ms
+  3 clients, range: [17.0, 17.1], iqr: [17.0, 17.1], median: 17.0 [1.9, 2.5], mean: 17.0 Â± 0.05 ms, cpu: 25%
+  7 clients, range: [17.1, 17.3], iqr: [17.2, 17.2], median: 17.2 [2.5, 3.8], mean: 17.2 Â± 0.05 ms, cpu: 46%
+ 15 clients, range: [16.4, 18.5], iqr: [16.8, 17.6], median: 17.5 [3.9, 12.9], mean: 17.3 Â± 0.53 ms, cpu: 46%
+ 31 clients, range: [17.4, 19.6], iqr: [18.5, 18.5], median: 18.5 [0.0, 1.2], mean: 18.5 Â± 0.45 ms, cpu: 70%
+Dynamic subtest rcs0: SUCCESS (7.065s)
+Subtest basic-flow: SUCCESS (7.065s)
+</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Stderr</td>
+        <td>
+          <pre>Starting subtest: basic-flow
+Starting dynamic subtest: rcs0
+Dynamic subtest rcs0: SUCCESS (7.065s)
+Subtest basic-flow: SUCCESS (7.065s)
+</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Command</td>
+        <td>
+          <pre></pre>
+        </td>
+      </tr>
+      <tr>
+        <td>dmesg</td>
+        <td>
+          <pre>&lt;6&gt; [121.833293] Console: switching to colour dummy device 80x25
+&lt;6&gt; [121.833326] [IGT] gem_exec_fair: executing
+&lt;7&gt; [121.839093] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 1 created
+&lt;6&gt; [121.842182] [IGT] gem_exec_fair: starting subtest basic-flow
+&lt;6&gt; [121.842264] [IGT] gem_exec_fair: starting dynamic subtest rcs0
+&lt;7&gt; [121.842300] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 1 created
+&lt;7&gt; [121.847091] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 1 created
+&lt;7&gt; [122.948574] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 1 created
+&lt;7&gt; [122.951489] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 2 created
+&lt;7&gt; [122.954519] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 3 created
+&lt;7&gt; [124.076901] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 1 created
+&lt;7&gt; [124.084510] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 2 created
+&lt;7&gt; [124.090293] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 3 created
+&lt;7&gt; [124.094474] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 4 created
+&lt;7&gt; [124.097708] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 5 created
+&lt;7&gt; [124.100816] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 6 created
+&lt;7&gt; [124.103890] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 7 created
+&lt;7&gt; [125.231516] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 1 created
+&lt;7&gt; [125.247367] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 2 created
+&lt;7&gt; [125.254515] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 3 created
+&lt;7&gt; [125.260154] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 4 created
+&lt;7&gt; [125.263841] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 5 created
+&lt;7&gt; [125.266782] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 6 created
+&lt;7&gt; [125.269665] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 7 created
+&lt;7&gt; [125.272719] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 8 created
+&lt;7&gt; [125.275862] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 9 created
+&lt;7&gt; [125.279021] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 10 created
+&lt;7&gt; [125.282189] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 11 created
+&lt;7&gt; [125.285459] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 12 created
+&lt;7&gt; [125.288628] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 13 created
+&lt;7&gt; [125.291791] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 14 created
+&lt;7&gt; [125.294831] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 15 created
+&lt;7&gt; [126.403368] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 1 created
+&lt;7&gt; [126.414835] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 2 created
+&lt;7&gt; [126.421029] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 3 created
+&lt;7&gt; [126.425725] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 4 created
+&lt;7&gt; [126.429087] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 5 created
+&lt;7&gt; [126.431947] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 6 created
+&lt;7&gt; [126.435073] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 7 created
+&lt;7&gt; [126.438095] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 8 created
+&lt;7&gt; [126.441132] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 9 created
+&lt;7&gt; [126.444157] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 10 created
+&lt;7&gt; [126.447201] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 11 created
+&lt;7&gt; [126.450175] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 12 created
+&lt;7&gt; [126.453150] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 13 created
+&lt;7&gt; [126.456216] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 14 created
+&lt;7&gt; [126.461832] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 15 created
+&lt;7&gt; [126.465263] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 16 created
+&lt;7&gt; [126.468261] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 17 created
+&lt;7&gt; [126.471275] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 18 created
+&lt;7&gt; [126.474374] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 19 created
+&lt;7&gt; [126.478075] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 20 created
+&lt;7&gt; [126.481094] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 21 created
+&lt;7&gt; [126.484179] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 22 created
+&lt;7&gt; [126.487884] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 23 created
+&lt;7&gt; [126.490887] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 24 created
+&lt;7&gt; [126.493969] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 25 created
+&lt;7&gt; [126.497094] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 26 created
+&lt;7&gt; [126.500534] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 27 created
+&lt;7&gt; [126.503547] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 28 created
+&lt;7&gt; [126.506548] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 29 created
+&lt;7&gt; [126.509547] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 30 created
+&lt;7&gt; [126.512664] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 31 created
+&lt;7&gt; [127.601851] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 1 created
+&lt;7&gt; [127.606299] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 2 created
+&lt;7&gt; [127.610246] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 3 created
+&lt;7&gt; [127.613336] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 4 created
+&lt;7&gt; [127.616860] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 5 created
+&lt;7&gt; [127.619896] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 6 created
+&lt;7&gt; [127.623042] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 7 created
+&lt;7&gt; [127.626132] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 8 created
+&lt;7&gt; [127.629168] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 9 created
+&lt;7&gt; [127.632240] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 10 created
+&lt;7&gt; [127.635354] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 11 created
+&lt;7&gt; [127.638465] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 12 created
+&lt;7&gt; [127.641491] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 13 created
+&lt;7&gt; [127.644516] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 14 created
+&lt;7&gt; [127.647591] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 15 created
+&lt;7&gt; [127.650807] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 16 created
+&lt;7&gt; [127.653917] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 17 created
+&lt;7&gt; [127.657066] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 18 created
+&lt;7&gt; [127.660182] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 19 created
+&lt;7&gt; [127.663289] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 20 created
+&lt;7&gt; [127.666233] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 21 created
+&lt;7&gt; [127.669336] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 22 created
+&lt;7&gt; [127.672422] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 23 created
+&lt;7&gt; [127.675508] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 24 created
+&lt;7&gt; [127.678588] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 25 created
+&lt;7&gt; [127.681774] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 26 created
+&lt;7&gt; [127.684895] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 27 created
+&lt;7&gt; [127.688022] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 28 created
+&lt;7&gt; [127.691101] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 29 created
+&lt;7&gt; [127.694157] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 30 created
+&lt;7&gt; [127.697233] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 31 created
+&lt;7&gt; [127.700327] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 32 created
+&lt;7&gt; [127.703461] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 33 created
+&lt;7&gt; [127.706550] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 34 created
+&lt;7&gt; [127.709672] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 35 created
+&lt;7&gt; [127.712768] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 36 created
+&lt;7&gt; [127.715896] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 37 created
+&lt;7&gt; [127.718995] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 38 created
+&lt;7&gt; [127.722161] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 39 created
+&lt;7&gt; [127.725214] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 40 created
+&lt;7&gt; [127.728339] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 41 created
+&lt;7&gt; [127.731467] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 42 created
+&lt;7&gt; [127.734496] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 43 created
+&lt;7&gt; [127.737608] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 44 created
+&lt;7&gt; [127.740733] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 45 created
+&lt;7&gt; [127.743861] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 46 created
+&lt;7&gt; [127.747171] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 47 created
+&lt;7&gt; [127.750528] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 48 created
+&lt;7&gt; [127.753616] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 49 created
+&lt;7&gt; [127.756713] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 50 created
+&lt;7&gt; [127.759821] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 51 created
+&lt;7&gt; [127.762952] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 52 created
+&lt;7&gt; [127.766120] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 53 created
+&lt;7&gt; [127.769195] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 54 created
+&lt;7&gt; [127.772320] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 55 created
+&lt;7&gt; [127.775423] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 56 created
+&lt;7&gt; [127.778585] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 57 created
+&lt;7&gt; [127.781650] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 58 created
+&lt;7&gt; [127.784847] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 59 created
+&lt;7&gt; [127.787969] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 60 created
+&lt;7&gt; [127.791109] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 61 created
+&lt;7&gt; [127.794234] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 62 created
+&lt;7&gt; [127.797379] i915 0000:00:02.0: [drm:i915_gem_context_create_ioctl [i915]] HW context 63 created
+&lt;6&gt; [128.910507] [IGT] gem_exec_fair: exiting, ret=0
+&lt;6&gt; [128.987532] Console: switching to colour frame buffer device 240x67
+</pre>
+        </td>
+      </tr>
+    </table>
+    <p><a href="../index.html">Back to summary</a></p>
+  </body>
+</html>
